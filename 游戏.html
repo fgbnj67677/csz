@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        //冒泡排序
+        var arr = [5, 4, 3, 2, 1];
+        for (var i = 0; i <= arr.length - 1; i++) {
+            for (var j = 0; j <= arr.length - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    var temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        console.log(arr);  
+
+        //声明函数1
+        function sayHi(){
+            console.log('hi');
+        }
+        //声明函数2  函数表达式
+        var fun=function(){
+
+        }
+        fun();
+        //arguments 的使用  存储了所有传递过来的实参  */
+        function getRandom(min, max) {          //随机生成1-10的整数
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+
+        }
+        var random = getRandom(1, 100);
+        while (true) {
+            var num = prompt('你来猜？输入1-100之间的一个数字');
+            if (num > random) {
+                alert('你猜大了');
+            } else if (num < random) {
+                alert('你猜小了');
+            } else {
+                alert('恭喜你，猜对了！');
+                break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
